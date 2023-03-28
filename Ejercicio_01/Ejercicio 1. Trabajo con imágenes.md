@@ -30,6 +30,8 @@
 
   ![](C:\Users\aprei\OneDrive\Documentos\TAREA_DOCKER\Ejercicio_01\capturas\cap03.png)
 
+  
+
 * Coloca en ese mismo directorio raíz un archivo llamado `cabeceras.php` que muestre todas las cabeceras de la petición HTTP. 
 
   ![](C:\Users\aprei\OneDrive\Documentos\TAREA_DOCKER\Ejercicio_01\capturas\cap05.png)
@@ -116,7 +118,7 @@ docker cp cabeceras.php servidor:/var/www/html/
 
 
 
-## BIBLIOGRAFÍA
+## WEBGRAFIA
 
 * Apuntes del aula virtual del módulo DESPLIEGUE DE APLICACIONES WEB
 * [Recuperación de cabeceras de protocolo HTTP](https://www.php.net/manual/en/function.getallheaders.php)
