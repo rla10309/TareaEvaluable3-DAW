@@ -8,7 +8,7 @@
   docker run -d --name servidor -p 1234:80 php:7.4-apache
   ```
 
-  ![](C:\Users\aprei\OneDrive\Documentos\TAREA_DOCKER\Ejercicio_01\capturas\cap01.png)
+  ![](\capturas\cap01.png)
 
 * Comprobamos que el contenedor se ha creado y está funcionando
 
