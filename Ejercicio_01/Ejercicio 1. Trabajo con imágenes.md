@@ -8,7 +8,7 @@
   docker run -d --name servidor -p 1234:80 php:7.4-apache
   ```
 
-  ![](C:\Users\aprei\OneDrive\Documentos\TAREA_DOCKER\Ejercicio_01\capturas\cap01.png)
+  ![](capturas\cap01.png)
 
 * Comprobamos que el contenedor se ha creado y está funcionando
 
@@ -16,7 +16,7 @@
   docker ps -a -s
   ```
 
-  ![](C:\Users\aprei\OneDrive\Documentos\TAREA_DOCKER\Ejercicio_01\capturas\cap02.png)
+  ![](capturas\cap02.png)
 
 * Colocamos en el directorio raíz del servicio web del contenedor un sitio web personalizado
 
@@ -24,25 +24,25 @@
   docker cp TareaDocker servidor:/var/www/html/
   ```
 
-  ![](C:\Users\aprei\OneDrive\Documentos\TAREA_DOCKER\Ejercicio_01\capturas\cap04.png)
+  ![](capturas\cap04.png)
 
   
 
-  ![](C:\Users\aprei\OneDrive\Documentos\TAREA_DOCKER\Ejercicio_01\capturas\cap03.png)
+  ![](capturas\cap03.png)
 
   
 
 * Coloca en ese mismo directorio raíz un archivo llamado `cabeceras.php` que muestre todas las cabeceras de la petición HTTP. 
 
-  ![](C:\Users\aprei\OneDrive\Documentos\TAREA_DOCKER\Ejercicio_01\capturas\cap05.png)
+  ![](capturas\cap05.png)
 
 ```bash
 docker cp cabeceras.php servidor:/var/www/html/
 ```
 
-![](C:\Users\aprei\OneDrive\Documentos\TAREA_DOCKER\Ejercicio_01\capturas\cap06.png)
+![](capturas\cap06.png)
 
-![](C:\Users\aprei\OneDrive\Documentos\TAREA_DOCKER\Ejercicio_01\capturas\cap07.png)
+![](capturas\cap07.png)
 
 * Se muestra captura de pantalla después de añadir el sitio web y el script php.
 
@@ -53,7 +53,7 @@ docker cp cabeceras.php servidor:/var/www/html/
   docker ps -a 
   ```
 
-  ![](C:\Users\aprei\OneDrive\Documentos\TAREA_DOCKER\Ejercicio_01\capturas\cap09.png)
+  ![](capturas\cap09.png)
 
 
 
@@ -65,7 +65,7 @@ docker cp cabeceras.php servidor:/var/www/html/
   docker pull mariadb
   ```
 
-  ![](C:\Users\aprei\OneDrive\Documentos\TAREA_DOCKER\Ejercicio_01\capturas\cap10.png)
+  ![](capturas\cap10.png)
 
 * Creamos el contenedor con las especificaciones del enunciado
 
@@ -73,7 +73,7 @@ docker cp cabeceras.php servidor:/var/www/html/
   docker run -d --name bbdd -e MYSQL_DATABASE=base1 -e MYSQL_ROOT_PASSWORD=root -e MYSQL_USER=daw -e MYSQL_PASSWORD=laboral1 mariadb
   ```
 
-  ![](C:\Users\aprei\OneDrive\Documentos\TAREA_DOCKER\Ejercicio_01\capturas\cap11.png)
+  ![](capturas\cap11.png)
 
 * Nos conectamos con el usuario root
 
@@ -89,7 +89,7 @@ docker cp cabeceras.php servidor:/var/www/html/
   show tables from base1;
   ```
 
-  ![](C:\Users\aprei\OneDrive\Documentos\TAREA_DOCKER\Ejercicio_01\capturas\cap12.png)
+  ![](capturas\cap12.png)
 
  * Comprueba que existe la base de datos desde el usuario daw
 
@@ -102,11 +102,11 @@ docker cp cabeceras.php servidor:/var/www/html/
    show tables from base1;
    ```
 
-   ![](C:\Users\aprei\OneDrive\Documentos\TAREA_DOCKER\Ejercicio_01\capturas\cap13.png)
+   ![](capturas\cap13.png)
 
 * Comprobamos que no se puede borrar la imagen de `mariadb` mientras está en uso por el contenedor `bbdd`.
 
-  ![](C:\Users\aprei\OneDrive\Documentos\TAREA_DOCKER\Ejercicio_01\capturas\cap14.png)
+  ![](capturas\cap14.png)
 
 * Se eliminan los contenedores
 
@@ -114,7 +114,7 @@ docker cp cabeceras.php servidor:/var/www/html/
   docker rm -f bbdd
   ```
 
-  ![](C:\Users\aprei\OneDrive\Documentos\TAREA_DOCKER\Ejercicio_01\capturas\cap15.png)
+  ![](capturas\cap15.png)
 
 
 
