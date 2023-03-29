@@ -11,7 +11,7 @@
   docker network ls
   ```
 
-  ![](C:\Users\aprei\OneDrive\Documentos\TAREA_DOCKER\Ejercicio_02\capturas\cap01.png)
+  ![](capturas/cap01.png)
 
 * Creamos un volumen para la base de datos `dataDB`
 
@@ -20,7 +20,7 @@
   docker volume ls
   ```
 
-  ![](C:\Users\aprei\OneDrive\Documentos\TAREA_DOCKER\Ejercicio_02\capturas\cap02.png)
+  ![](capturas/cap02.png)
 
 * Crea un contenedor con la imagen de `mariadb`con las especificaciones requeridas en el enunciado
 
@@ -28,7 +28,7 @@
   docker run -d --network bdnet --name myDB -e MYSQL_ROOT_PASSWORD=root -v dataDB:/var/lib/mysql mariadb
   ```
 
-  ![](C:\Users\aprei\OneDrive\Documentos\TAREA_DOCKER\Ejercicio_02\capturas\cap03.png)
+  ![](capturas/cap03.png)
 
 * Creamos el contenedor con la imagen del programa Adminer con las especificaciones del enunciado
 
@@ -36,7 +36,7 @@
   docker run -d --network bdnet --name myadminer -p 8080:8080 -e ADMINER_DEFAULT_SERVER=myDB adminer
   ```
 
-  ![](C:\Users\aprei\OneDrive\Documentos\TAREA_DOCKER\Ejercicio_02\capturas\cap04.png)
+  ![](capturas/cap04.png)
 
 * Se muestran los dos contenedores creados y funcionando
 
@@ -44,11 +44,11 @@
   docker ps -a
   ```
 
-  ![](C:\Users\aprei\OneDrive\Documentos\TAREA_DOCKER\Ejercicio_02\capturas\cap06.png)
+  ![](capturas/cap06.png)
 
 * Abrimos *Adminer* para conectar con el servidor de la base de datos en el navegador
 
-  ![](C:\Users\aprei\OneDrive\Documentos\TAREA_DOCKER\Ejercicio_02\capturas\cap07.png)
+  ![](capturas/cap07.png)
 
 * Crea una base de datos llamada ***despliegue***.
 
@@ -69,7 +69,7 @@
   docker volume ls
   ```
 
-  ![](C:\Users\aprei\OneDrive\Documentos\TAREA_DOCKER\Ejercicio_02\capturas\cap10.png)
+  ![](capturas/cap10.png)
 
 
 
