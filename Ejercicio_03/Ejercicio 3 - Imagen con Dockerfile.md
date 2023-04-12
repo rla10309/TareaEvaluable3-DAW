@@ -5,12 +5,12 @@
 * Mostramos la carpeta con los ficheros del sitio web y el Dockerfile
 
 
-  ![](capturas\cap01.png)
+  ![](capturas/cap01.png)
 
 * Contenido del archivo Dockerfile
 
-  ![](capturas\cap02.png)
-=======
+  ![](capturas/cap02.png)
+
 * Mostramos la creación de la nueva imagen
 
   ```bash
@@ -19,8 +19,8 @@
 
 
 
-  ![](capturas\cap03.png)
-=======
+  ![](capturas/cap03.png)
+
 * Creamos el contenedor a partir de nuestra imagen
 
   ```bash
@@ -32,8 +32,8 @@
 
 * Acceso al navegador con el sitio web servido
 
-  ![](capturas\cap05.png)
-=======
+  ![](capturas/cap05.png)
+
 
 * Procedemos a distribuir la imagen usando Docker Hub
 
@@ -44,7 +44,7 @@
     ```
 
     ![](capturas\cap06.png)
-=======
+
   * Distribución de la imagen
 
     ```bash
