@@ -28,7 +28,7 @@
   ```
 
 
- ![](capturas\cap04.png)
+ ![](capturas/cap04.png)
 
 * Acceso al navegador con el sitio web servido
 
@@ -43,7 +43,7 @@
     docker login
     ```
 
-    ![](capturas\cap06.png)
+    ![](capturas/cap06.png)
 
   * Distribución de la imagen
 
