@@ -48,11 +48,11 @@
 
 * Crea una base de datos llamada ***despliegue***.
 
-  ![](capturas\cap08.png)
+  ![](capturas/cap08.png)
 
 * Mostramos los datos generados por el contenedor del servidor de base de datos
 
-  ![](capturas\cap09.png)
+  ![](capturas/cap09.png)
 
 * Mostramos el borrado de los contenedores, de la red utilizada y del volumen
 
